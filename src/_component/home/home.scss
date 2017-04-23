@@ -1,0 +1,9 @@
+// introduce $class variable to hold value
+// of the prefix of all css classes in this file
+$class: 'home';
+.#{$class} {
+  // @extend %section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
