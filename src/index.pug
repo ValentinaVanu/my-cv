@@ -1,3 +1,4 @@
 extends _layout/main
 block content
-  h1 Wellcome to my awsome cv !
+  -var resume = site.data.resume;
+  h1#{resume.page.pageTitle}
