@@ -24,3 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+.icon-profile:before {
+  content: "\e923";
+}
+.icon-file-empty:before {
+  content: "\e924";
+}
+.icon-address-book:before {
+  content: "\e944";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
