@@ -5,6 +5,12 @@
   }
   ,"author": {
     "name": "Valentina Vanu",
-    "title": "Web Developer"
+    "title": "Web Developer",
+    "social": [
+      {
+        "icon": "google-plus2",
+        "url": "http://plus.google.com/+"
+      }
+    ]
   }
 }
