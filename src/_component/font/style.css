@@ -1,10 +1,12 @@
+@import "_component/font/font";
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jgocag');
-  src:  url('fonts/icomoon.eot?jgocag#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jgocag') format('truetype'),
-    url('fonts/icomoon.woff?jgocag') format('woff'),
-    url('fonts/icomoon.svg?jgocag#icomoon') format('svg');
+  src:  url('font/icomoon.eot?jgocag');
+  src:  url('font/icomoon.eot?jgocag#iefix') format('embedded-opentype'),
+    url('font/icomoon.ttf?jgocag') format('truetype'),
+    url('font/icomoon.woff?jgocag') format('woff'),
+    url('font/icomoon.svg?jgocag#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
