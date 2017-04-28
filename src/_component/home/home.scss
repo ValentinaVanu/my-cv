@@ -27,3 +27,18 @@ $class: 'home';
   @extend %uppercase;
   font-size: 2rem;
 }
+
+.#{$class}-item {
+  padding: 0.5rem 0.8rem;
+}
+
+.#{$class}-linkc{
+  font-size:3rem;
+  text-decoration: none;
+}
+
+.#{$class}-social {
+  display: inline-flex;
+  max-width: 80vw;
+  flex-wrap: wrap;
+}
