@@ -8,10 +8,10 @@ $class: 'home';
 // Starting with a percentege sign % instead of . or #
 // will not output this to CSS. The advantege is that
 // we can call this piece of code using @extend and
-// keep our code DRY (dont repeat yoursel)
+// keep our code DRY (dont repeat yourself)
 %uppercase {
   // Transform all characters to upper case
-  // Ex/ This is Ultra -> THIS IS ULTRA
+  // Ex: This is Ultra -> THIS IS ULTRA
   text-transform: uppercase;
 }
 
@@ -60,4 +60,7 @@ $class: 'home';
   // width provider by this container break the res of the
   // content on new line
   flex-wrap: wrap;
+  // set the items that break on new lines to be align center
+  // it's very similar to text-align: center
+  justify-content: center;
 }
