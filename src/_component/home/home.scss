@@ -53,7 +53,8 @@ $class: 'home';
   // Remove the default underline present in anchor tags
   text-decoration: none;
   color: $color-white;
-  
+  cursor: pointer;
+
   &:active,
   &:focus {
     color: $color-fiord;
