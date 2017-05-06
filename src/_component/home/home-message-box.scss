@@ -25,6 +25,12 @@
 $class: 'home-message';
 
 .#{$class} {
+  // Set the .home-message text colour to white
+  // to increase readability
+  color: $color-white;
+}
+
+.#{$class} {
   // Set the .home-message text color to white
   // to increase readablility
   color: $color-white;
