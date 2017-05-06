@@ -1,40 +1,44 @@
 {
-"//":"The value of the page property is an object that contains",
-"//":"the page title and escription.Those will be used to set",
-"//":"the page title tag and meta descriprion for SE0 purpose",
+  "//": "The value of the page property is an object that contains",
+  "//": "the page title and description. Those will be used to set",
+  "//": "the page title tag and meta description for SEO purpose",
   "page": {
     "pageTitle": "Resume Valentina Vanu",
     "pageDescription": "Resume Valentina Vanu"
   },
-  "author": {
-    "name": "Valentina Vanu",
-    "title": "Web Developer",
-    "//":"There is no way to create comments in a JSON file and this is close enough",
-    "//":"The 'social'property value is an array of objects,",
-    "//":"a collection of objects, and each object has two properties,",
-    "//":"an icon and an url.The collection and Those properties",
-    "//":"will be used to generate the social media link bar.",
-    "social": [
-      {
-        "icon": "google-plus2",
-        "url": "http://plus.google.com/+VanuValentinaGeorgiana"
-      },
-      {
-        "icon": "facebook2",
-        "url": "https://www.facebook.com/ValentinaVanu"
-      },
-      {
-        "icon": "github",
-        "url": "https://github.com/ValentinaVanu"
-      },
-      {
-        "icon": "skype",
-        "url": "skype:vanuvalentina?call"
-      },
-      {
-        "icon": "html-five",
-        "url": "http://bitbee.uk"
+  "section": {
+    "home": {
+      "author": {
+        "name": "Valentina Vanu",
+        "title": "Web Developer",
+        "//":"There is no way to create comments in a JSON file and this is close enough",
+        "//":"The 'social'property value is an array of objects,",
+        "//":"a collection of objects, and each object has two properties,",
+        "//":"an icon and an url.The collection and Those properties",
+        "//":"will be used to generate the social media link bar.",
+        "social": [
+          {
+            "icon": "google-plus2",
+             "url": "http://plus.google.com/+VanuValentinaGeorgiana"
+           },
+           {
+            "icon": "facebook2",
+            "url": "https://www.facebook.com/ValentinaVanu"
+          },
+          {
+            "icon": "github",
+            "url": "https://github.com/ValentinaVanu"
+          },
+          {
+            "icon": "skype",
+            "url": "skype:vanuvalentina?call"
+          },
+          {
+            "icon": "html-five",
+            "url": "http://bitbee.uk"
+          }
+        ]+
       }
-    ]
+    }
   }
 }
