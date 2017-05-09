@@ -7,6 +7,22 @@
     "pageDescription": "Resume Valentina Vanu"
   },
   "section": {
+    "about": {
+      "title": "About me",
+      "content": [
+        {
+          "type": "avatar",
+          "url": "/asset/image/valentina-vanu-avatar.jpg"
+        },
+        {
+          "type": "text",
+          "title": "Valentina Vanu",
+          "text": [
+            "My name is Valentina Vanu and I am 22 years old.I am a meticulous self-taught , self-motivated person and a problem solver driven by every day's challenge like Helen Hayes said 'The expert at anything was once a beginner.'"
+          ]
+        },
+      ]
+    },
     "home": {
       "author": {
         "name": "Valentina Vanu",
@@ -37,7 +53,7 @@
             "icon": "html-five",
             "url": "http://bitbee.uk"
           }
-        ]+
+        ]
       }
     }
   }
