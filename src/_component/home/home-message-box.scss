@@ -1,26 +1,26 @@
-//- CSS TRICK - part 2
-//- This trick works by making use of the change state
-//- of the input type radio and the next sibling CSS selector"+"
-//- Example:
-//-   This will target all unchecked input elements with class .my-input
-//-   .my-input { margin-left: 10px; }
-//-   This will target all checked input elements with class .my-input
-//-   .my-input:checked { margin-left: 20px; }
-//- input type radio elements can be gouped by using
-//- the name attribute with the same value, thus ensuring
-//- only one input can be checked at one time
-//- HTML example of an ipmut and it s siblings
-//-   <input type="radio" id="myCustomUniqueId" />
-//-   <p>Lable text</p>
-//-   #myCustonUniqueId:checked + p { color:blue }
-//- The example above will make the text content inside the paragraph
-//- tag of color blue when the input #myCustomUniqueId is Checked.
-//-
-//- Summary:
-//- 1. The label linked to the input chamges the state of
-//- the input when clicked
-//- 2. The next sibling of the input can be targeted with
-//- diffrent CSS rules based on the checked state of the input
+// CSS TRICK - part 2
+// This trick works by making use of the change state
+// of the input type radio and the next sibling CSS selector "+"
+// Example:
+//   This will target all unchecked input elements with class .my-input
+//   .my-input { margin-left: 10px; }
+//   This will target all checked input elements with class .my-input
+//   .my-input:checked { margin-left: 20px; }
+// input type radio elements can be grouped by using
+// the name attribute with the same value, thus ensuring
+// only one input can be checked at one time
+// HTML example of an input and its sibling
+//   <input type="radio" id="myCustomUniqueId" />
+//   <p>Label text</p>
+//   #myCustomUniqueId:checked + p { color: blue }
+// The example above will make the text content inside the paragraph
+// tag of color bluewhen the input #myCustomUniqueId is checked.
+//
+// Summary:
+// 1. The label linked to the input changes the state of
+// the input when clicked
+// 2. The next sibling of the input can be targeted with
+// different CSS rules based on the checked state of the input
 
 $class: 'home-message';
 
@@ -30,25 +30,19 @@ $class: 'home-message';
   color: $color-white;
 }
 
-.#{$class} {
-  // Set the .home-message text color to white
-  // to increase readablility
-  color: $color-white;
-}
-
 .#{$class}-radio + .#{$class} {
-  // Hide all .home-message that follows as sibling
+  // Hide all .home-message that follow as sibling
   // an input type radio with checked state as false
   display: none;
 }
 
-#message-default.#{$class}-radio:checked + .#{$class} + .#{$class}-bpx-header {
-  // Hide all /home-message that follows as sibling
-  // an input type radio with checked state as fales
+#message-default.#{$class}-radio:checked + .#{$class} + .#{$class}-box-header {
+  // Hide all .home-message that follow as sibling
+  // an input type radio with checked state as false
   display: none;
 }
 
-.#{$class}-radio:checked + .#{$class}{
+.#{$class}-radio:checked + .#{$class} {
   // Change display state of the .home-message from
   // hidden to show based on the checked state true
   // of the input type radio
@@ -56,18 +50,18 @@ $class: 'home-message';
 }
 
 // Hide the input type radio elements to clean interface
-input.#{class}-radio[type=radio] {
+input.#{$class}-radio[type=radio] {
   display: none;
 }
 
-// Create a rounded corner rectangle
+// Create a rounded corners rectangle
 .#{$class}-body {
-  // That doesnt break a new line
+  // That doesn't break on new line
   display: inline-block;
 
   // With white border
-  border:0.2rem solid $color-white;
-  // That has rounded corners
+  border: 0.2rem solid $color-white;
+  // that has rounded corners
   border-radius: 0.5rem;
   // and enough clear space between border and text content
   padding: 0.8rem;
@@ -75,7 +69,7 @@ input.#{class}-radio[type=radio] {
   margin-top: 0.5rem;
 
   // Set the position to relative so the child(ren) that have
-  // position: absolute will be bound to this container
+  // position: absolute will be bound to this container.
   position: relative;
 }
 
@@ -83,36 +77,36 @@ input.#{class}-radio[type=radio] {
 .#{$class}-link,
 .#{$class}-link:visited {
   font-size: 1.4rem;
-  // Remove the default underline in anchor tags
+  // Remove the default underline present in anchor tags
   text-decoration: none;
-//  and set the color to white
+  // and set the text colour to white
   color: $color-white;
 }
 
-// Make use of the position relative and position: absolute CSS trick
+// Make use of position: relative and position: absolute CSS trick
 // This box will look for the first parent that has position relative
-// or absolute and be bound to it. It'll look from the first parent.
-// going up until it reaches the bosy. If none os found it stops at body.
-// Once it finds it, its top. bottoms. left and right will be influenced
+// or absolute and be bound to it. It'll look from the first parent,
+// going up until it reaches the body. If none is found it stops at body.
+// Once it finds it, its top, bottom, left and right will be influenced
 // by the box of the parent it found and binded to it.
 // Imagine this box:
-// ------------------------------------------------------
-// | <div style="position: absolute"></div>
-// ------------------------------------------------------
+// --------------------------------------------------
+// |    <div style="position: absolute"></div>      |
+// --------------------------------------------------
 // The div inside the box will be trapped inside those borders
-// unless negative top, bottom, left and right will be specified.
+// unless negative top, bottom, left or right will be specified.
 .#{$class}-box-header {
-  // This position absolute goes hand in hadn with position relativve
+  // This position absolute goes hand in hand with position relative
   // of the first found parent
   position: absolute;
-  // and this width is set to 80% of the parent container
-  // 100%-10%-10%=80%
+  // and the width is set to 80% of the parent contaner
+  // 100% - 10% - 10% = 80%
   left: 10%;
   right: 10%;
   // and it'll be positioned starting at the bottom of the parent container
-  // since top: 100% will move it away from the top towards the bottom
-  // by 100% height of the parent
-  // update :101% to fix bleeding into parent container
+  // since top: 100% will move it away from the top and towards the bottom
+  // by 100% height of the parent.
+  // update: 101% to fix bleeding into parent container
   top: 101%;
 
   // Display flex will make the content behave like inline elements
@@ -126,7 +120,7 @@ input.#{class}-radio[type=radio] {
 .#{$class}-box-info {
   @extend %noselect;
 
-  // set-some distance between text and borders
+  // set some distance between text and borders
   // to make the text more readable
   padding: 0.4rem;
   // and set the background to white
@@ -134,24 +128,24 @@ input.#{class}-radio[type=radio] {
 }
 
 .#{$class}-box-info {
-  // strech this box to the available width
+  // stretch this box to the available width
   width: 100%;
-  // and set the bottom left corner to be rounded
+  // and set the botto left corner to be rounder
   border-bottom-left-radius: 0.4rem;
 
-  // and don-t allow text to break on new line
+  // and don't allow text to break on new line
   white-space: nowrap;
   // and hide the text that flows outside the available width
   overflow-x: hidden;
-  //  and display three dots to let the user know there is more hidden content
+  // and dispaly three dots to let the user know there is more hidden content
   text-overflow: ellipsis;
   // set text to be centered vertically in its container using line-height
   line-height: 1.5rem;
 }
 
-// Since we are using position absolute for the home-message-box-header,
+// Since we are using position absolute for home-message-box-header,
 // this means the element is behaving like it's no longer present in the
-// dom. so the parent container no longer knows about it and finishes
+// dom, so the parent container no longer knows about it and finishes
 // the vertical height a bit earlier, the result looks like the box bleeds
 // into the next section:
 // -- Parent container -----------------
@@ -166,7 +160,7 @@ input.#{class}-radio[type=radio] {
 // |                                   |
 // By using the margin bottom we move the parent container
 // bottom so the .home-message-box-header looks visually that
-// It's inside the parent container
+// it's inside the parent container
 .#{$class}-box {
   margin-bottom: 3rem;
 }
@@ -175,8 +169,9 @@ input.#{class}-radio[type=radio] {
   // Match the parent container round corner
   // and use a smaller value to reduce bleeding
   border-bottom-right-radius: 0.4rem;
-  // Set the cursor to pointer so descktop users
-  // will see a hand that suggests interaction
+
+  // Set the cursor to pointer so desktop users
+  // will see a hand that suggests interaction is possible
   cursor: pointer;
 
   // Make the action call area (the area that you can tap/click)
