@@ -7,8 +7,11 @@
     "pageDescription": "Resume Valentina Vanu"
   },
   "section": {
+    "experience": {
+      "title": "Experience"
+    },
     "about": {
-      "title": "About me",
+      "title": "about me",
       "content": [
         {
           "type": "avatar",
