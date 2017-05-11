@@ -1,36 +1,36 @@
-$class: 'about'
+$class: 'about';
 
 .#{$class} {
   // Set some whitespace between content and edges
   padding: 5vw;
 }
 
-%avatar-comoom {
-  // Make the shape of the element circle
+%avatar-common {
+  // Make the shape of the element a circle
   border-radius: 50%;
 
   // Use block for margin: auto and better positioning
   display: block;
 }
 
-.#{$class}-avavtar {
+.#{$class}-avatar {
   // apply circle shape and display block
   @extend %avatar-common;
 
-  // Strech as much as the parent container
+  // Stretch as much as the parent container
   max-width: 100%;
   // set the border to white so it blends with the background
   border: 0.5rem solid $color-white;
 }
 
 .#{$class}-avatar-wrapper {
-  // apply circle shape and siplay block
+  // apply circle shape and display block
   @extend %avatar-common;
 
   // set the max width to 80%
   max-width: 80%;
   // and combine it with margin auto to position
-  // it to center (like text-align: center)#
+  // it to center (like text-align: center)
   margin: 1rem auto;
   // and set the color to contrast with the background
   border: 0.5rem solid $color-gumbo;
@@ -39,8 +39,8 @@ $class: 'about'
 .#{$class}-title {
   // Set the colour to contrast the background
   color: $color-gumbo;
-  // and slightly bigger font size value
-  font-sizeL 2.5rem;
+  // and a slightly bigger font size value
+  font-size: 2.5rem;
   // and align it to center
   text-align: center;
   // and increase the white space on top and bottom
@@ -55,6 +55,6 @@ $class: 'about'
   // and set the text to be displayed from the left margin
   // all the way to the right margin
   text-align: justify;
-  // and increade the top and bottom white space
+  // and increase the top and bottom white space
   padding: 1rem 0;
 }
