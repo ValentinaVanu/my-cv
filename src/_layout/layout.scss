@@ -14,7 +14,7 @@ html {
   font-size: calc( 12px + (24 - 12) * ( (100vw - 400px) / ( 800 - 400) ));
 }
 
-html, body {
+html, body, .container {
     height: 100%;
     // To set the height of a future element in percentege
     // like 100%, all parent elements must have a height defined.

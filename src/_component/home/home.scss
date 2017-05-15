@@ -17,6 +17,7 @@ $class: 'home';
 }
 
 .#{$class} {
+  min-height: 100%;
   // @extend %section;
   display: flex;
   justify-content: center;
@@ -76,5 +77,5 @@ $class: 'home';
   // it's very similar to text-align: center
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient(ellipse, $color-manatee, $color-fiord);
+  // background-image: radial-gradient(ellipse, $color-manatee, $color-fiord);
 }

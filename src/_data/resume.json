@@ -21,9 +21,27 @@
           "type": "text",
           "title": "Valetina Vanu",
           "text": [
-            "My name is Valentina Vanu and I am 22 years old.I am a meticulous self-taught , self-motivated person and a problem solver driven by every day's challenge like Helen Hayes said 'The expert at anything was once a beginner.'"
+            "My name is Valentina Vanu and I am 22 years old. I am a meticulous self-taught, self-motivated person and a problem solver driven by every day's challenge like Helen Hayes said 'The expert at anything was once a beginner'."
           ]
-        }
+        },
+       {
+         "type": "card",
+         "title": "Awards",
+         "card": [
+           {
+             "title": "Best bla bla bla",
+             "description": "I've won the 1st place 100 times",
+             "location": "Google plex meeting-London",
+             "date": "2016"
+           },
+           {
+             "title": "Best web site for bla bla",
+             "description": "I'vve participated on a contest and won the best website.",
+             "location": "Bucharest / Romania",
+             "date": "2016"
+           }
+         ]
+       }
       ]
     },
     "home": {
