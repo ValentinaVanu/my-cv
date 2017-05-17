@@ -3,7 +3,7 @@ $class: 'about-card';
 .#{$class} {
   // Create a rounded border
   border-radius: 1rem;
-  // add a dark colour
+  // od a dark colour
   border: 0.1rem solid $color-fiord;
   // and create some white space at the bottom
   margin-bottom: 1rem;
@@ -15,7 +15,7 @@ $class: 'about-card';
   }
 }
 
-// about-card-item is the element in each
+// about-card-item is the element in each of the
 // award list
 .#{$class}-item {
   // set width to 80% to play with the amount of text
@@ -45,7 +45,7 @@ $class: 'about-card';
   padding: 0.5rem;
   // and set the font size as the one of the paragraph
   font-size: 1.2rem;
-  // and the line height size as the one of the paragrpah
+  // and the line height size as the one of the paragraph
   line-height: 1.5rem;
   // and be smart about positioning the children
   display: flex;
@@ -55,7 +55,7 @@ $class: 'about-card';
   min-height: 2rem;
 
   // remove the border of the last element
- &:last-child {
-   bored-bottom: none;
- }
+  &:last-child {
+    border-bottom: none;
+  }
 }
