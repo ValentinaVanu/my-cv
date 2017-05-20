@@ -12,9 +12,9 @@ $class: 'experience';
   // make the list header full width
   display: block;
   // and increase a bit the font size
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   // and create some white space between text and margins
-  padding: 1rem;
+  padding: 1.5rem;
   // and set the background colour
   background-color: $color-lily;
   // and set the text color to be in contrast with the color-lily
@@ -25,7 +25,7 @@ $class: 'experience';
   // and set the border bottom
   border-bottom: 0.1rem solid darken($color-lily, 10);
 
-  ?and remove the border from the last occurence
+  // and remove the border from the last occurence
   &:last-of-type {
     border-bottom: none;
   }
@@ -49,9 +49,10 @@ $class: 'experience';
   // hide all the input type radio buttons
   display: none;
 }
+
 .#{$class}-list-company {
   // make the font thicker for company
-  fonot-weight: bold;
+  font-weight: bold;
 }
 
 .#{$class}-list-date {
@@ -63,16 +64,16 @@ $class: 'experience';
 .#{$class}-list-company,
 .#{$class}-responsability-list-item,
 .#{$class}-list-summary {
-  // create some white space for date,company, list item
-  // and summary between content and margin
-  padding: 0.5rem;
+  // create some white space for date, company, list item
+  // and summary beteen content and margins
+  padding: 1.2rem;
 }
 
 .#{$class}-list-info {
-  // Use displauy flex to make the children appear on same row
+  // Use display flex to make the children appear on same row
   display: flex;
   // and use space between of justify content to make them
-  // site one to the left and one to the right
+  // sit one to the left and one to the right
   justify-content: space-between;
 }
 
@@ -87,11 +88,12 @@ $class: 'experience';
   // and make it sit centered
   width: 98%;
   margin: 0 auto;
-
+  line-height: 1.5;
+  font0size: 1.2rem;
   // Alternate background colour using even and odd
-  // parammeters of nth-child pseudo selector
+  // parameters of nth-child pseudo selector
   &:nth-child(odd) {
-    background-color: lighten($color-alond, 10%);
+    background-color: lighten($color-almond, 10%);
   }
 
   &:nth-child(even) {
