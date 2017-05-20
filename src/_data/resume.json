@@ -9,17 +9,42 @@
   "section": {
     "experience": {
       "title": "Experience",
-      "content": [
+      "content": [{
+        "type": "list",
+        "list": [{
+          "date": "2013 Jun - present",
+          "jobTitle": "DIRECTOR",
+          "company": "Smart Yii Limited",
+          "summary": "This is the company that I contract through.",
+          "responsability": []
+        },
         {
-
-
+          "date:": "2015 Oct - present",
+          "jobTitle": "Senior Front-End Developer",
+          "company": "Argus Software",
+          "summary": "Restructure and rebuild the fron end solution migrating from Ember to AngularJS and AngularJS 2.",
+          "responsability": []
+        },
+        {
+          "date": "2014 Oct - 2015 Oct",
+          "jobTitle": "Senior UI Developer",
+          "company": "Direct Line Group",
+          "summary": "Restructure and rebuild using Angular 1.4",
+          "responsability": []
+        },
+        {
+          "date": "2013 Apr - 2014 Oct",
+          "jobTitle": "Software engineer",
+          "company": "Chemist DIrec UK",
+          "summary": "Redesign and rebuild the #1 online chemical selling website....",
+          "responsability": []
         }
-      ]
+       ]
+     }]
     },
     "about": {
       "title": "about me",
-      "content": [
-        {
+      "content": [{
           "type": "avatar",
           "url": "asset/image/valentina-vanu-avatar.jpg"
         },
@@ -33,8 +58,7 @@
        {
          "type": "card",
          "title": "Awards",
-         "card": [
-           {
+         "card": [{
              "title": "Best bla bla bla",
              "description": "I've won the 1st place 100 times",
              "location": "Google plex meeting-London",
@@ -59,8 +83,7 @@
         "//":"a collection of objects, and each object has two properties,",
         "//":"an icon and an url.The collection and Those properties",
         "//":"will be used to generate the social media link bar.",
-        "social": [
-          {
+        "social": [{
             "icon": "google-plus2",
              "url": "http://plus.google.com/+VanuValentinaGeorgiana"
            },
