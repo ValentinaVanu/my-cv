@@ -7,6 +7,38 @@
     "pageDescription": "Resume Valentina Vanu"
   },
   "section": {
+    "skill": {
+      "title": "my skills",
+      "content": [
+        {
+          "type": "list",
+          "title": "front end",
+          "list": [
+            "Angular 2",
+            "HTML 5",
+            "CSS 3",
+            "JavaScript",
+            "Bootstrap",
+            "Jade/Pug",
+            "Gulp",
+            "Yeoman",
+            "Yeogurt",
+            "SCSS",
+            "Command line",
+            "Wireframes"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "back end",
+          "list": [
+            "Git",
+            "JSON",
+            "NodeJS"
+          ]
+        }
+      ]
+    }
     "experience": {
       "title": "Experience",
       "content": [{
