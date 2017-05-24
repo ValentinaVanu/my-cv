@@ -15,12 +15,12 @@
           //- we aldo specify a name and all the input type radio that will be
           //- generated from the new line will have the same value to the name
           //- attribute, which will group them and only one can be selected at the same time.
-          input.experience-list-radio(type="radio", name="experience-list", id='experience-item-${key}')
+          input.experience-list-radio(type="radio", name="experience-list", id=`experience-item-${key}`)
             //- pair  them for attribute value of the label with the id attribute
             //- value of the input type radio. Once the two are paired, when you
             //- click/tap on the label the state of the input (checked or not)
             //- will change.
-          label.experience-list-header(for='experience-item-${key}') 
+          label.experience-list-header(for=`experience-item-${key}`) 
             a(name=listItem.jobTitle)
             span #{listItem.jobTitle}
           .experience-list-body
