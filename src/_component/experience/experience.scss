@@ -29,6 +29,7 @@ $class: 'experience';
   &:last-of-type {
     border-bottom: none;
   }
+
   .resume-icon-plus {
     float: right;
   }
@@ -98,6 +99,7 @@ $class: 'experience';
   // and make it sit centered
   width: 98%;
   margin: 0 auto;
+
   // Alternate background colour using even and odd
   // parameters of nth-child pseudo selector
   &:nth-child(odd) {
@@ -107,6 +109,14 @@ $class: 'experience';
   &:nth-child(even) {
     background-color: lighten($color-lily, 10%);
   }
+}
+
+.#{$class}-list-close {
+  // hide the label that can close the header
+  // of the experience list unless it's expended
+  display: none;
+  // stick the label to the right position
+  float: right;
 }
 
 // we're using the adjacent selector "+" to apply css properties
@@ -127,6 +137,16 @@ $class: 'experience';
   // header experience
   background-color: $color-gumbo;
   border-bottom: none;
+
+  // Show the label of the experience list that can
+  // close the expanded list item
+  .#{$class}-list-close {
+    display: inherit;
+  }
+
+  & > .resume-icon-plus {
+    display: none;
+  }
 
   .resume-icon-plus {
     transform: rotate(45deg);
