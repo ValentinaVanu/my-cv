@@ -1,12 +1,12 @@
 $class: 'client';
 
 .#{$class} {
-  // Set some whitespace between content  and edges
+  // Set some whitespace between content and edges
   @extend %section-container;
 }
 
-.#{$class}-selection-title {
-  // Extend from selection-title
+.#{$class}-section-title {
+  // Extend from section-title
   @extend %section-title;
 }
 
