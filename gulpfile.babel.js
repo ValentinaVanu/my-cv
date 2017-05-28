@@ -44,25 +44,21 @@ fs.readdirSync('./gulp')
 
 // Server task with watch
 gulp.task('dev', gulp.series(
-  // 'clean:development',
   'font',
   'copy',
   'image',
   'sass',
   'pug',
-  'template',
   'watch'
 ));
 
 // Build production ready code
 gulp.task('build', gulp.series(
-  // 'clean:production',
   'font',
   'copy',
   'image',
   'sass',
-  'pug',
-  'template'
+  'pug'
 ));
 
 // Default gulp task
