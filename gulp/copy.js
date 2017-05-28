@@ -3,9 +3,7 @@
 // This file "copy.js" was created as a copy of "font.js"
 // and updated to copy files like doc and docx (documents)
 
-import path from 'path';
-import gulpConfig from './util/config';
-import { getStaticFiles } from './util/util';
+import path from 'path'
 
 const copy = ({
   gulp,
@@ -14,22 +12,18 @@ const copy = ({
   taskTarget
 }) => {
   const dir = config.directory;
-  const dest = path.join(taskTarget, dir.asset.replace(/\_/, ''));
+  const dest = path.join(taskTarget , di.asset.replace(/\_/, ''));
 
   gulp.task('copy', () => {
-    const staticFilePath = path.join(
+    return gulp
+    .src(path.join(
       dir.source,
       dir.asset,
-      gulpConfig.fileExpression.copy
-    );
-
-    return getStaticFiles({
-      gulp,
-      staticFilePath,
-      dest,
-      plugins
-    });
+      '**/*.{doc,docx}'
+    ))
+    .pipe(plugins.changed(dest))
+    .pipe(gulp.dest(dest));
   });
-};
+}
 
 export default copy;

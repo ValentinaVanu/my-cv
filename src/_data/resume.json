@@ -121,18 +121,19 @@
     },
     "about": {
       "title": "about me",
-      "content": [{
+      "content": [
+        {
           "type": "avatar",
           "url": "asset/image/valentina-vanu-avatar.jpg"
-        },
-        {
+        }
+        ,{
           "type": "text",
           "title": "Valetina Vanu",
           "text": [
             "My name is Valentina Vanu and I am 22 years old. I am a meticulous self-taught, self-motivated person and a problem solver driven by every day's challenge like Helen Hayes said 'The expert at anything was once a beginner'."
           ]
-        },
-       {
+        }
+       ,{
          "type": "card",
          "title": "Awards",
          "card": [{
