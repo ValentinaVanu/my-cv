@@ -18,9 +18,21 @@
       "source": "src",
       "data": "_data",
       "component": "_component",
+      "layout": "_layout",
       "asset": "_asset",
       "image": "image",
-      "font": "font"
+      "font": "font",
+      "templateCollection": [
+        "article",
+        "product"
+      ]
+    },
+    "render": {
+      "url" : {
+        "//": "this is recomended to avoid Linux/Windows capitalization issue",
+        "htmlExtentionOn": false ,
+        "toLowercase": true
+      }
     },
     "entry": {
       "cssExternal": "style**.{scss,sass}",
