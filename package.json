@@ -18,28 +18,16 @@
       "source": "src",
       "data": "_data",
       "component": "_component",
-      "layout": "_layout",
       "asset": "_asset",
       "image": "image",
-      "font": "font",
-      "templateCollection": [
-        "article",
-        "product"
-      ]
-    },
-    "render": {
-      "url": {
-        "//": "this is recommended to avoid Linux/Windows capitalization issue",
-        "htmlExtensionOn": false,
-        "toLowercase": true
-      }
+      "font": "font"
     },
     "entry": {
       "cssExternal": "style**.{scss,sass}",
       "cssInline": "inline**.{scss,sass}",
       "css": {
         "inline": true,
-        "external": true
+        "external": false
       }
     }
   },
@@ -80,14 +68,10 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.3.0",
     "gulp-pug": "^3.2.0",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
-    "imagemin-jpegoptim": "^5.0.0",
     "imagemin-pngquant": "^5.0.0",
     "imagemin-svgo": "^5.2.0",
-    "jstransformer-markdown-it": "^2.0.0",
-    "merge-stream": "^1.0.1",
     "minimist": "^1.2.0"
   }
 }
