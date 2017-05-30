@@ -2,16 +2,19 @@ $class: 'about-card';
 
 .#{$class} {
   // Create a rounded border
-  border-radius: 1rem;
+  // border-radius: 1rem;
   // od a dark colour
-  border: 0.1rem solid $color-fiord;
+  // border: 0.1rem solid $color-fiord;
   // and create some white space at the bottom
   margin-bottom: 1rem;
+
+  background-color: $color-white;
 
   // select all the resume-icons span elements
   span[class*=resume-icon] {
     // and double the font size icon
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $color-white;
   }
 }
 
@@ -27,6 +30,11 @@ $class: 'about-card';
 
 .#{$class}-title {
   font-weight: bold;
+}
+
+.#{$class}-icon {
+  // and allow some whitespace in each about-card child
+  padding: 1.5rem;
 }
 
 .#{$class}-description {
@@ -57,5 +65,18 @@ $class: 'about-card';
   // remove the border of the last element
   &:last-child {
     border-bottom: none;
+  }
+
+  &:nth-child(1) > .about-card-icon {
+    background-color: $color-fiord;
+  }
+  &:nth-child(2) > .about-card-icon {
+    background-color: $color-lily;
+  }
+  &:nth-child(3) > .about-card-icon {
+    background-color: $color-periwinkle-gray;
+  }
+  &:nth-child(4) > .about-card-icon {
+    background-color: $color-manatee;
   }
 }
