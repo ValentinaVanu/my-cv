@@ -1,23 +1,21 @@
 {
-  "//": "The value of the page property is an object that contains",
-  "//": "the page title and description. Those will be used to set",
   "//": "the page title tag and meta description for SEO purpose",
   "page": {
     "pageTitle": "Resume Valentina Vanu",
     "pageDescription": "Resume Valentina Vanu"
   },
   "section": {
-  "client": {
-    "title": "recent clients",
-    "content": [
-      "rma-consulting.png",
-      "argus.png",
-      "direct-line-group.jpg",
-      "chemist-direct.png",
-      "content-formula.png",
-      "zeus-media.jpg"
-    ]
-  },
+    "client": {
+      "title": "recent clients",
+      "content": [
+        "rma-consulting.png",
+        "argus.png",
+        "direct-line-group.jpg",
+        "chemist-direct.png",
+        "content-formula.png",
+        "zeus-media.jpg"
+      ]
+    },
     "menu": {
       "action": {
         "label": "menu",
@@ -86,38 +84,41 @@
     },
     "experience": {
       "title": "Experience",
-      "content": [{
-        "type": "list",
-        "list": [{
-          "date": "2013 Jun - present",
-          "jobTitle": "DIRECTOR",
-          "company": "Smart Yii Limited",
-          "summary": "This is the company that I contract through.",
-          "responsability": []
-        },
+      "content": [
         {
-          "date:": "2015 Oct - present",
-          "jobTitle": "Senior Front-End Developer",
-          "company": "Argus Software",
-          "summary": "Restructure and rebuild the fron end solution migrating from Ember to AngularJS and AngularJS 2.",
-          "responsability": []
-        },
-        {
-          "date": "2014 Oct - 2015 Oct",
-          "jobTitle": "Senior UI Developer",
-          "company": "Direct Line Group",
-          "summary": "Restructure and rebuild using Angular 1.4",
-          "responsability": []
-        },
-        {
-          "date": "2013 Apr - 2014 Oct",
-          "jobTitle": "Software engineer",
-          "company": "Chemist DIrec UK",
-          "summary": "Redesign and rebuild the #1 online chemical selling website....",
-          "responsability": []
+          "type": "list",
+          "list": [
+            {
+              "date": "2013 Jun - present",
+              "jobTitle": "DIRECTOR",
+              "company": "Smart Yii Limited",
+              "summary": "This is the company that I contract through.",
+              "responsability": []
+            },
+            {
+              "date:": "2015 Oct - present",
+              "jobTitle": "Senior Front-End Developer",
+              "company": "Argus Software",
+              "summary": "Restructure and rebuild the fron end solution migrating from Ember to AngularJS and AngularJS 2.",
+              "responsability": []
+            },
+            {
+              "date": "2014 Oct - 2015 Oct",
+              "jobTitle": "Senior UI Developer",
+              "company": "Direct Line Group",
+              "summary": "Restructure and rebuild using Angular 1.4",
+              "responsability": []
+            },
+            {
+              "date": "2013 Apr - 2014 Oct",
+              "jobTitle": "Software engineer",
+              "company": "Chemist DIrec UK",
+              "summary": "Redesign and rebuild the #1 online chemical selling website....",
+              "responsability": []
+            }
+          ]
         }
-       ]
-     }]
+      ]
     },
     "about": {
       "title": "about me",
@@ -125,8 +126,8 @@
         {
           "type": "avatar",
           "url": "asset/image/valentina-vanu-avatar.jpg"
-        }
-        ,{
+        },
+        {
           "type": "text",
           "title": "Valetina Vanu",
           "subtitle": "Front-End Developer",
@@ -134,38 +135,36 @@
             "My name is Valentina Vanu and I am 22 years old. I am a meticulous self-taught, self-motivated person and a problem solver driven by every day's challenge like Helen Hayes said 'The expert at anything was once a beginner'."
           ]
         }
-      ]},
-         "award": {
-           "title": "awards",
-           "content": [
-             {
-             "title": "Best bla bla bla",
-             "description": "I've won the 1st place 100 times",
-             "location": "Google plex meeting-London",
-             "date": "2016"
-           },
-           {
-             "title": "Best web site for bla bla",
-             "description": "I've participated on a contest and won the best website.",
-             "location": "Bucharest / Romania",
-             "date": "2016"
-           }
-        ]
+      ]
+    },
+    "award": {
+      "title": "awards",
+      "content": [
+        {
+          "title": "Best bla bla bla",
+          "description": "I've won the 1st place 100 times",
+          "location": "Google plex meeting-London",
+          "date": "2016"
+        },
+        {
+          "title": "Best web site for bla bla",
+          "description": "I've participated on a contest and won the best website.",
+          "location": "Bucharest / Romania",
+          "date": "2016"
+        }
+      ]
     },
     "home": {
       "author": {
         "name": "Valentina Vanu",
         "title": "Web Developer",
-        "//":"There is no way to create comments in a JSON file and this is close enough",
-        "//":"The 'social'property value is an array of objects,",
-        "//":"a collection of objects, and each object has two properties,",
-        "//":"an icon and an url.The collection and Those properties",
-        "//":"will be used to generate the social media link bar.",
-        "social": [{
+        "//": "will be used to generate the social media link bar.",
+        "social": [
+          {
             "icon": "google-plus2",
-             "url": "http://plus.google.com/+VanuValentinaGeorgiana"
-           },
-           {
+            "url": "http://plus.google.com/+VanuValentinaGeorgiana"
+          },
+          {
             "icon": "facebook2",
             "url": "https://www.facebook.com/ValentinaVanu"
           },
